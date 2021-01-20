@@ -1,0 +1,26 @@
+{
+  "default": {
+    "jobs": [
+      {
+        "name": "dbx-scala-example",
+        "new_cluster": {
+          "spark_version": "7.4.x-cpu-ml-scala2.12",
+          "node_type_id": "i3.xlarge",
+          "aws_attributes": {
+            "first_on_demand": 1,
+            "availability": "SPOT"
+          },
+          "num_workers": 2
+        },
+        "libraries": [
+          {
+            "jar": "target/dbx-maven-demo-0.0.1-jar-with-dependencies.jar"
+          }
+        ],
+        "spark_jar_task": {
+          "main_class_name": "net.renarde.demos.SampleApp"
+        }
+      }
+    ]
+  }
+}
