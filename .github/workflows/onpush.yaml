@@ -46,7 +46,7 @@ jobs:
         run: python -m pip install --upgrade pip
 
       - name: Install dbx
-        run: pip install -U tools/dbx-0.7.0-py3-none-any.whl
+        run: pip install -U dbx
 
       - name: Prepare package
         run: mvn package
