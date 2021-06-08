@@ -5,9 +5,10 @@ Sample project for Scala 2.12 and Spark 3.0.1 with `dbx` support, based on some 
 
 ## Instructions 
 
-- To use `dbx` please install Python 3.7.5 and install it from tools folder via:
+- Install Python 3.7.5 and pip
+- Install `dbx`:
 ```
-pip install tools/dbx-0.7.0-py3-none-any.whl
+pip install dbx
 ```
 
 - To configure environment, please use:
